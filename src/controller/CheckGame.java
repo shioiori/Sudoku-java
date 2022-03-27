@@ -30,6 +30,13 @@ public class CheckGame {
                 node.getButton().setBackground(Color.PINK);
                 return;
             }
+        int dr = row / 3 * 3, dc = col / 3 * 3;
+        for (int i = dr; i < dr + 3; ++i)
+            for (int j = dc; j < dc + 3; ++j)
+                if (i != row && j != col && SudokuPanel.cells[i][j].getValue() == value) {
+                    node.getButton().setBackground(Color.PINK);
+                    return;
+                }
         fillNode++;
         node.getButton().setBackground(Color.WHITE);
     }
