@@ -1,5 +1,6 @@
 package model;
 
+import controller.CheckGame;
 import view.SudokuPanel;
 
 import javax.swing.*;
@@ -16,6 +17,4 @@ public class Data {
             {0, 0, 0, 0, 0, 0, 0, 5, 1},
             {2, 0, 0, 0, 0, 8, 4, 7, 3}
     };
-
-
 }

@@ -3,6 +3,7 @@ package controller;
 import model.Node;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.*;
 
 public class CellFill implements MouseListener {
@@ -48,6 +49,9 @@ public class CellFill implements MouseListener {
                     case 57:
                         checkRule.validate(node,9);
                         break;
+                    default:
+                        node.getButton().setText("");
+                        node.getButton().setBackground(Color.WHITE);
                 }
                 if (checkRule.validateGame()){
                     JFrame jFrame = new JFrame();

@@ -16,7 +16,7 @@ public class SudokuPanel extends JPanel{
                 cells[i][j] = new Node(i,j,0);
                 //System.out.println(cells[i][j].getX() + " " + cells[i][j].getY());
                 cells[i][j].getButton().setSize(new Dimension(CELL_SIZE, CELL_SIZE));
-                cells[i][j].getButton().setBackground(Color.white);
+                cells[i][j].getButton().setBackground(Color.WHITE);
                 if (Data.defaultBoard[i][j] != 0) {
                     cells[i][j].setValue(Data.defaultBoard[i][j]);
                     cells[i][j].getButton().setEnabled(false);
